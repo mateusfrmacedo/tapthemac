@@ -1,0 +1,121 @@
+import os
+
+# Conteúdo do arquivo HTML
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms - TapTheMac</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            color: #000;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #222;
+            border-left: 4px solid #007aff;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #444;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        .disclaimer {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+        }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy & Terms of Service</h1>
+        <p class="last-updated">Last Updated: April 1, 2026</p>
+    </header>
+
+    <main>
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>TapTheMac is built with your privacy in mind. Because the core functionality of the app is to play local sound files triggered by your device's sensors, we believe your data is none of our business.</p>
+            
+            <ul>
+                <li><strong>No Data Collection:</strong> TapTheMac runs completely locally on your macOS device. The app does not collect, store, or transmit any personal data, usage telemetry, or crash reports to us or any third parties.</li>
+                <li><strong>Your Audio Files:</strong> The .MP3 and .M4A files you choose to use with TapTheMac remain locally on your machine. We do not have access to them.</li>
+                <li><strong>Payment Information:</strong> All purchases are securely processed through Gumroad. We do not collect, process, or have access to your credit card details or financial information. Gumroad may share your email address with us strictly for the purpose of issuing software updates and customer support.</li>
+                <li><strong>Changes to this Policy:</strong> If our data practices change in the future, we will update this policy and notify users accordingly.</li>
+            </ul>
+        </section>
+
+        <section id="terms">
+            <h2>Terms of Service</h2>
+            <p>By purchasing and using TapTheMac, you agree to the following terms:</p>
+            
+            <ul>
+                <li><strong>License:</strong> Your purchase grants you a personal, non-exclusive, and non-transferable license to use TapTheMac on your personal devices. You may not distribute, share, or resell the application.</li>
+                <li class="disclaimer">Hardware Interaction (Important): TapTheMac requires physical interaction (tapping) with your device. You agree to use the application responsibly and gently. The developer (Mateus Freitas Macedo) is not liable for any hardware damage, data loss, or physical damage to your MacBook or surrounding environment resulting from excessive force, misuse, or abuse while using the application.</li>
+                <li><strong>Software "As Is":</strong> TapTheMac is provided "as is", without warranty of any kind, express or implied. We do not guarantee that the software will be perfectly error-free or compatible with all future macOS updates.</li>
+                <li><strong>Refunds:</strong> Refund requests are handled entirely through Gumroad's standard refund policy.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions about this Privacy Policy or the Terms of Service, please contact the developer via <a href="https://mateusfreitas.gumroad.com/">Gumroad</a> or visit the portfolio: <a href="https://mateusfrmacedo.github.io/">mateusfrmacedo.github.io</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mateus Freitas Macedo. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>"""
+
+# Salvar o arquivo
+with open("privacy.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("Arquivo privacy.html gerado com sucesso.")
